@@ -9,6 +9,5 @@
   ],
   "isort.args": ["--profile", "black"],
   "black-formatter.interpreter": [],
-  "black-formatter.cwd": "mysite",
   "python.analysis.typeCheckingMode": "basic"
 }
