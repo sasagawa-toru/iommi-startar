@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-ee+l7ts5fg&c*r@owuxr$7f&1!*xg64*m$3ol&n)!o4uw3zib$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: list[str] = []
 
 
 # Application definition
@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "iommi",
 ]
 
 MIDDLEWARE = [
+    "iommi.live_edit.Middleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -47,6 +49,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "iommi.sql_trace.Middleware",
+    "iommi.profiling.Middleware",
+    "iommi.middleware",
 ]
 
 ROOT_URLCONF = "mysite.urls"
