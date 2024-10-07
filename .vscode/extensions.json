@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "matangover.mypy",
+    "ms-python.black-formatter",
+    "ms-python.isort",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "tamasfe.even-better-toml"
+  ]
+}

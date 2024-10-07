@@ -1,0 +1,13 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true
+  },
+  "mypy.runUsingActiveInterpreter": true,
+  "python.analysis.extraPaths": [
+    "mysite"
+  ],
+  "isort.args": ["--profile", "black"],
+  "black-formatter.interpreter": [],
+  "python.analysis.typeCheckingMode": "basic"
+}
