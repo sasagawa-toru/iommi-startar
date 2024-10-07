@@ -10,15 +10,14 @@ class AlbumAdmin(admin.ModelAdmin):
         "year",
     )
 
+
 class ArtistAdmin(admin.ModelAdmin):
-    list_display = (
-        "name",
-    )
+    list_display = ("name",)
+
 
 class GenreAdmin(admin.ModelAdmin):
-    list_display = (
-        "name",
-    )
+    list_display = ("name",)
+
 
 class TrackAdmin(admin.ModelAdmin):
     list_display = (
